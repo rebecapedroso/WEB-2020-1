@@ -1,7 +1,7 @@
  import React from 'react'
 
- export default (props)=>{
+ export default (props)=>
      <div>
-         {props.nome} {props.curso} {props.cidade}
+     {props.nome} {props.curso} {props.cidade}
      </div>
- }
+ 

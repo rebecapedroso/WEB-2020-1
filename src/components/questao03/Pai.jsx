@@ -1,8 +1,12 @@
 import React from 'react'
 
-import DadosFilho from './Filho'
+import Filho from './Filho'
+
 
 export default (props)=>
     <div>
-        <DadosFilho nome = 'Rebeca' curso = 'SI' cidade = 'Milha-Ce'/>
+        <h2><Filho nome = 'Nome: Rebeca Silva' /></h2>
+        <h2><Filho curso = 'Curso: SI' /></h2>
+        <h2><Filho cidade = 'Cidade: Milhã-Ce'/> </h2>
     </div>
+

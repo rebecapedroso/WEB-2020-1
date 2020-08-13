@@ -1,0 +1,46 @@
+{
+  "disciplinas": [
+    {
+      "id": 1,
+      "nome": "FUP",
+      "curso": "SI",
+      "capacidade": 45
+    },
+    {
+      "id": 2,
+      "nome": "ED",
+      "curso": "EC",
+      "capacidade": 30
+    },
+    {
+      "nome": "SD",
+      "curso": "EC",
+      "capacidade": "30",
+      "id": 3
+    },
+    {
+      "nome": "TGS",
+      "curso": "SI",
+      "capacidade": "55",
+      "id": 4
+    },
+    {
+      "nome": "Calculo",
+      "curso": "SI",
+      "capacidade": "50",
+      "id": 5
+    },
+    {
+      "nome": "Cálculo II",
+      "curso": "EC",
+      "capacidade": "30",
+      "id": 6
+    },
+    {
+      "nome": "MD",
+      "curso": "SI",
+      "capacidade": "45",
+      "id": 7
+    }
+  ]
+}

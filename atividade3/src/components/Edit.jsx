@@ -48,10 +48,11 @@ export default class Edit extends Component {
                                     nome: this.state.nome,
                                     curso: this.state.curso,
                                     capacidade: this.state.capacidade}
-        axios.put('http://localhost:3002/disciplinas'+this.props.match.params.id,disciplinaEditada)
+        axios.put('http://localhost:3002/disciplinas/'+this.props.match.params.id,disciplinaEditada)
         .then(
             (res)=>{
-                console.log(res.data)
+                //console.log(res.data)
+                this.props.history.push('/list')
             }
         )
         .catch(error=>console.log(error))

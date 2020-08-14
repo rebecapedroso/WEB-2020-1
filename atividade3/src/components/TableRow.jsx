@@ -1,7 +1,20 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
+import axios from 'axios'
 
 export default class TableRow extends Component {
+
+    constructor(props){
+        super(props)
+        this.apagar = this.apagar.bind(this)
+    }
+
+    apagar(){
+        axios.delete('http://localhost:3002/disciplinas/'+this.props.disciplina.id)
+        .then(res=>this.props.apagarElementoPorId(this.props.disciplina.id))
+        .catch(error=>console.log(error))
+    }
+
     render() {
         return (
             <tr>
@@ -22,9 +35,9 @@ export default class TableRow extends Component {
                 </td>
 
                 <td>
-                <button className="btn  btn-light"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/User-trash.svg/1200px-User-trash.svg.png"  width = '20px' height= '25'   /></button>
+                <button onClick={this.apagar} className="btn btn-light"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/User-trash.svg/1200px-User-trash.svg.png"  width = '20px' height= '25'   /></button>
                 </td>
-                
+
 
             </tr>
         )

@@ -9,6 +9,7 @@ export default class List extends Component{
         super(props)
 
         this.state = {disciplinas: []}
+        this.apagarElementoPorId = this.apagarElementoPorId.bind(this)
     }
 
     componentDidMount(){
@@ -30,9 +31,19 @@ export default class List extends Component{
         if(!this.state.disciplinas) return
         return this.state.disciplinas.map(
             (dis, i)=>{
-                return <TableRow disciplina ={dis} key ={i}/>
+                return <TableRow disciplina ={dis} key ={i} apagarElementoPorId = {this.apagarElementoPorId}/>
             }
         )
+    }
+
+    apagarElementoPorId(id){
+        let tempDisciplinas = this.state.disciplinas
+        for(let i = 0; i < tempDisciplinas.length; i++ ){
+            if(tempDisciplinas[i].id === id){
+                tempDisciplinas.splice(i,1)
+            }
+        }
+        this.setState({disciplinas:tempDisciplinas})
     }
 
     render(){

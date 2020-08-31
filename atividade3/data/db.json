@@ -13,16 +13,16 @@
       "id": 4
     },
     {
-      "nome": "WEB",
-      "curso": "SI",
-      "capacidade": "40",
-      "id": 8
-    },
-    {
       "nome": "Matemática ",
       "curso": "Engenharia civil ",
       "capacidade": "20",
       "id": 9
+    },
+    {
+      "nome": "Desenvolvimento Web 2020.1",
+      "curso": "Sistemas de Informação",
+      "capacidade": "40",
+      "id": 10
     }
   ]
 }

@@ -35,6 +35,12 @@
       "curso": "CC",
       "IRA": "9",
       "id": 6
+    },
+    {
+      "nome": "Rebeca",
+      "curso": "Silva",
+      "IRA": "8",
+      "id": 7
     }
   ]
 }

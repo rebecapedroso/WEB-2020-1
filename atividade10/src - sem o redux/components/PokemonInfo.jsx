@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import Card from './Card'
 
 import axios from 'axios'
-import {connect} from 'react-redux'
 
-class PokemonInfo extends Component {
+export default class PokemonInfo extends Component {
 
     constructor(props){
         super(props)
@@ -49,12 +48,3 @@ class PokemonInfo extends Component {
         )
     }
 }
-
-function mapStateToProps(state){
-    return{
-        id: state.pokemonId.id
-    }
-}
-
-const conexaoPokemonInfo = connect(mapStateToProps)(PokemonInfo)
-export {conexaoPokemonInfo}
